@@ -1,8 +1,5 @@
 @startuml
 
-entity User {
-}
-
 entity Device {
     * id : int
     --
@@ -66,6 +63,5 @@ DeviceEnableCommand }|--|| Device
 Device ||--|{ DeviceMetric
 DeviceMetric }o--o{ Alert
 Alert }o--o{ Notification
-Notification }o--o{ User
 
 @enduml
